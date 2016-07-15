@@ -1,6 +1,6 @@
 EAPI="6"
 
-inherit git-r3 multilib-build
+inherit git-r3
 
 DESCRIPTION="assign group names to AFS fake groups"
 HOMEPAGE="https://debathena.mit.edu/"
