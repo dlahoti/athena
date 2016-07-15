@@ -23,15 +23,18 @@ RDEPEND="
 	dev-python/fuse-python[${PYTHON_USEDEP}]
 	net-fs/locker-support[${PYTHON_USEDEP}]
 	dev-python/configparser[${PYTHON_USEDEP}]
+	net-fs/openafs
 "
 
 pkg_setup() {
 	enewgroup pyhesiodfs
 	enewuser pyhesiodfs -1 -1 -1 "pyhesiodfs"
+
+	elog "FUSE must be configured with user_allow_other in /etc/fuse.conf"
 }
 
 src_install() {
-	newbin "${S}/pyHesiodFS.py" pyhesiodfs
+	distutils-r1_src_install
 
 	newinitd "${FILESDIR}/pyhesiodfs.init" pyhesiodfs
 	newconfd "${FILESDIR}/pyhesiodfs.conf" pyhesiodfs
