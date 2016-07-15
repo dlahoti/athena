@@ -22,6 +22,7 @@ RDEPEND="
 	${RDEPEND}
 	dev-util/glade[python,${PYTHON_USEDEP}]
 	dev-python/pygtk[${PYTHON_USEDEP}]
+	dev-python/moira-python[${PYTHON_USEDEP}]
 "
 
 src_prepare() {
