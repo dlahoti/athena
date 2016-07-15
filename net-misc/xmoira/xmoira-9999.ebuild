@@ -7,7 +7,7 @@ inherit git-r3 distutils-r1
 DESCRIPTION="graphical interface for the Moira service management system"
 HOMEPAGE="https://sipb.mit.edu/"
 EGIT_REPO_URI="https://github.com/mit-athena/moira-gui.git"
-if [[ "${PV}" -ne "9999" ]]; then
+if [[ "${PV}" != "9999" ]]; then
 	EGIT_COMMIT="refs/tags/${PV}"
 	KEYWORDS="~x86 ~amd64"
 else
