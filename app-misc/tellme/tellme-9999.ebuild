@@ -3,7 +3,7 @@ EAPI="6"
 inherit git-r3
 
 DESCRIPTION="utility to provide Athena-specific information"
-HOMEPAGE="https://sipb.mit.edu/"
+HOMEPAGE="https://debathena.mit.edu/"
 EGIT_REPO_URI="https://github.com/mit-athena/tellme.git"
 if [[ "${PV}" != 9999 ]]; then
 	EGIT_COMMIT="refs/tags/${PV}"

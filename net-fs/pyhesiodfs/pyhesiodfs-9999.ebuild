@@ -5,7 +5,7 @@ PYTHON_COMPAT=( python2_7 )
 inherit git-r3 distutils-r1 user
 
 DESCRIPTION="Hesiod-based AFS locker automounter"
-HOMEPAGE="https://sipb.mit.edu/"
+HOMEPAGE="https://debathena.mit.edu/"
 EGIT_REPO_URI="https://github.com/mit-athena/pyhesiodfs.git"
 if [[ "${PV}" != "9999" ]]; then
 	EGIT_COMMIT="refs/tags/${PV}"
