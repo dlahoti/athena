@@ -29,8 +29,6 @@ RDEPEND="
 pkg_setup() {
 	enewgroup pyhesiodfs
 	enewuser pyhesiodfs -1 -1 -1 "pyhesiodfs"
-
-	elog "FUSE must be configured with user_allow_other in /etc/fuse.conf"
 }
 
 src_install() {
@@ -46,4 +44,8 @@ src_install() {
 
 	insinto /etc
 	newins "${FILESDIR}/pyhesiodfs.etc" pyhesiodfs
+}
+
+pkg_postinst() {
+	elog "FUSE must be configured with user_allow_other in /etc/fuse.conf for the daemon to run as pyhesiodfs"
 }
