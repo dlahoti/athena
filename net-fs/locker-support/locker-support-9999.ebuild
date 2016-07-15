@@ -8,7 +8,7 @@ DESCRIPTION="Athena locker commands"
 HOMEPAGE="https://sipb.mit.edu/"
 EGIT_REPO_URI="https://github.com/mit-athena/locker-support.git"
 if [[ "${PV}" != "9999" ]]; then
-	EGIT_COMMIT="refs/tags/release/${PV}"
+	EGIT_COMMIT="refs/tags/${PV}"
 	KEYWORDS="~amd64 ~x86"
 else
 	KEYWORDS=""
