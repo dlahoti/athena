@@ -21,5 +21,6 @@ IUSE=""
 DEPEND="
 	${DEPEND}
 	dev-python/cython[${PYTHON_USEDEP}]
+	net-fs/openafs
 "
 RDEPEND="${DEPEND}"
