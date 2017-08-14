@@ -54,5 +54,5 @@ src_prepare() {
 }
 
 src_configure() {
-	econf --with-krb5 --with-com_err $(use_with hesiod) $(use_with zephyr) CFLAGS=-fPIC
+	econf --with-krb5 --with-com_err $(use_with hesiod) $(use_with zephyr)
 }
